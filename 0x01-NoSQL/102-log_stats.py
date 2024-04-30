@@ -28,7 +28,7 @@ def log_stats(mongo_collection):
         {"$limit": 10}
     ])
     for ip in ips:
-        print(f"\t{ip.get('_id')}: {ip.get('count')}")
+        print(f"\t{ip['_id']}: {ip['count']}")
 
 
 if __name__ == "__main__":
